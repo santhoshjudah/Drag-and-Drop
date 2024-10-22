@@ -1,0 +1,77 @@
+body {
+	background:#e2e2ff;
+	font-family:"Poppins",sans-serif;
+	height:100vh;
+	display:grid;
+	place-items:center;
+}
+.file {
+	max-width:500px;
+	width:98%;
+	height:320px;
+	background:#fff;
+	border-radius:10px;
+	border:1px solid #ddd;
+	padding:15px;
+	display:flex;
+	flex-direction:column;
+	gap:10px;
+	box-shadow:0px 2px 10px 2px rgba(0,0,0,0.05);
+}
+.file input {
+	display:none;
+}
+.file .before {
+	border:1px dashed #888;
+	flex:1;
+	border-radius:5px;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	text-align:center;
+	cursor:pointer;
+}
+.file .before > div {
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	gap:8px;
+}
+.file .before > div i {
+	font-size:40px;
+	color:#5750d9
+}
+.file .before > div h4 {
+	color:#111;
+	margin-top:5px;
+	font-size:16px;
+	width:160px;
+}
+.file .before > div p {
+	color:#555;
+	font-size:14px;
+}
+
+.file .after {
+	position:relative;
+	display:none;
+}
+.file .after img {
+	width:100%;
+	border-radius:5px;
+	max-height:260px;
+	object-fit: cover;
+}
+.file .after .clear-btn {
+	position:absolute;
+	top:10px;
+	right:10px;
+	background:rgba(0,0,0,0.5);
+	width:15px;
+	height:15px;
+	text-align:center;
+	border-radius:50%;
+	color:#fff;
+	cursor:pointer;
+	font-size:12px;
+}
